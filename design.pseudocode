@@ -17,7 +17,7 @@ TRY
                 IF counter < add_time_integer - 1
                     CONTINUE
                 ELSE
-                    SHOW "The sum of just positive number is answer."
+                    SHOW "The sum of just the positive number is answer."
                 ENDIF
             EXCEPT Exception
             SHOW "Invalid number!"

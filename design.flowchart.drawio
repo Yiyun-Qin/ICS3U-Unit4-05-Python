@@ -172,7 +172,7 @@
                 <mxCell id="98" value="if add_number_integer &amp;gt;= 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="152.5" y="1330" width="160" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="57" value="Print &quot;The sum of just positive numbers is answer.&quot;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+                <mxCell id="57" value="Print &quot;The sum of just the positive numbers is answer.&quot;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
                     <mxGeometry x="40" y="1920" width="380" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="102" target="77">
