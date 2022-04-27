@@ -2,17 +2,27 @@ GET add_time_string
 GET answer = 0
 TRY
     add_time_integer = int(add_time_string)
-    For counter in range(add_time_integer + 1)
-        GET add_number_string
-        TRY
-            add_number_integer = int(add_number_string)
-            answer = answer + add_number_integer
-            IF counter != add_time_integer
-                CONTINUE
-            ENDIF
-        EXCEPT Exception
-        SHOW "Invalid number!"
-    ENDWHILE
+    IF add_time_integer <= 0 THEN
+        SHOW "Please put in a positive number."
+    ELSE
+        For counter in range(add_time_integer)
+            GET add_number_string
+            TRY
+                add_number_integer = int(add_number_string)
+                IF add_number_integer >= 0 THEN
+                    answer = answer + add_number_integer
+                ELSE
+                    answer = answer + 0
+                ENDIF
+                IF counter < add_time_integer - 1
+                    CONTINUE
+                ELSE
+                    SHOW "The sum of just positive number is answer."
+                ENDIF
+            EXCEPT Exception
+            SHOW "Invalid number!"
+            ENDTRY
+        ENDWHILE
 EXCEPT Exception
     SHOW "Invalid number!"
 FINALLY
