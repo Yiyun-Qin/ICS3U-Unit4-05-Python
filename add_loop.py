@@ -30,7 +30,9 @@ def main():
                     if counter < add_time_integer - 1:
                         continue
                     else:
-                        print("The sum of just the positive numbers is {}.".format(answer))
+                        print(
+                            "The sum of just the positive numbers is {}.".format(answer)
+                        )
                 except Exception:
                     print("Invalid number!")
     except Exception:
